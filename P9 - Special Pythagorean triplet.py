@@ -12,5 +12,6 @@ for a in range(1, int(x/3)): # if a > x/3 then a<b<c can't be true as a+b+c=1000
     if(found):
         break
 
-print(a,b,c)
+result = a*b*c
+print(result)
 

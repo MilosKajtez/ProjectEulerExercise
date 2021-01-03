@@ -13,18 +13,15 @@ def getSequence(input):
     result.append(1)
     return result
 
-
-
 resultSequence = getSequence(1000000)
-print(resultSequence)
 result = 1000000
-number = 999999
-while(number > 500000):
-    newSequence = getSequence(number)
+
+for i in range(1,999999):
+    print(i)
+    newSequence = getSequence(i)
     if(len(newSequence) > len(resultSequence)):
         resultSequence = newSequence
-        result = number
+        result = i
 
-    number -= 1
 print(result)
             
